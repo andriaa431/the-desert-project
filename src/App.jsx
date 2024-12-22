@@ -10,15 +10,23 @@ function App() {
 
 
   return (
-   <><h1>Desserts
+   <div className='container'><h1>Desserts
 
    </h1>
    {dessertproducts.map((dessert) => {
-      return <p>{dessert.name}<img src={base_url + dessert.images.thumbnail} /></p>
+      return <>
+      <div className="dessert">
+          <img src={base_url + dessert.images.thumbnail} />
+      <button><AddToCart /> Add To Cart</button>
+      <p>{dessert.name}</p>
+      </div>
+    
+      
+    </>  
    })}
    <RemoveItem />
   
-   </>
+   </div>
   )
 }
 

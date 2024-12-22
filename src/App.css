@@ -3,4 +3,15 @@
 body {
     font-family: "Red Hat Text", serif;
     font-optical-sizing: auto;
+    background-color: hsl(13, 31%, 94%) ;
+}
+
+.dessert{
+   display: flex;
+   flex-direction: column;
+   width: fit-content;
+}
+
+.container{
+    margin-left: 20%;
 }
